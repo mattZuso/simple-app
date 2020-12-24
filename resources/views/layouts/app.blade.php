@@ -20,7 +20,7 @@
 <body>
 <nav class="navbar navbar-dark bg-dark" aria-label="First navbar example">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Never expand</a>
+        <a class="navbar-brand" href="#">ZUSO</a>
         <a class="navbar-brand" type="button" href="#" onclick="logout()">
             Logout
         </a>
@@ -31,7 +31,6 @@
     </div>
 </nav>
 <main class="container py-5">
-
     @yield("content")
 </main>
 <script>

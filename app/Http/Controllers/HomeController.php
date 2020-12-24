@@ -2,12 +2,18 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use DB;
 
 class HomeController extends Controller
 {
     public function index()
     {
-        return view("home.index");
+
+        $sql = "SELECT * FROM users WHERE id = " . $_GET["user_id"];
+
+        $users = DB::select($sql);
+        return view("home.index", [
+            "users" => $users,
+        ]);
     }
 }
